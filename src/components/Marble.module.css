@@ -1,0 +1,12 @@
+.marble {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button {
+    padding: 5px 10px;
+    cursor: pointer;
+    /* border: none; */
+}
