@@ -5,7 +5,7 @@ import Marble from "./components/Marble";
 import { MarbleType } from "./types";
 function App() {
   const [marbles, setMarbles] = useState<MarbleType[]>([]);
-  const intervalRef = useRef(null);
+  const intervalRef = useRef<number | null>(null);
 
   const startCountUp = (id: string) => {
     intervalRef.current = setInterval(() => {
