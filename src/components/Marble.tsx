@@ -18,7 +18,8 @@ const Marble = ({
         className={styles.button}
         onClick={() => decrementMarble(id)}
         onMouseDown={() => startCountDown(id)}
-        onMouseLeave={() => stopCounter()}
+        onMouseUp={stopCounter} 
+        onMouseLeave={stopCounter} 
       >
         -
       </button>
@@ -27,7 +28,8 @@ const Marble = ({
         className={styles.button}
         onClick={() => incrementMarble(id)}
         onMouseDown={() => startCountUp(id)}
-        onMouseLeave={() => stopCounter()}
+        onMouseUp={stopCounter} 
+        onMouseLeave={stopCounter} 
       >
         +
       </button>

@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { nanoid } from "nanoid";
 import Marble from "./components/Marble";
 import { MarbleType } from "./types";
+
 function App() {
   const [marbles, setMarbles] = useState<MarbleType[]>([]);
   const intervalRef = useRef<number | null>(null);
@@ -12,8 +13,8 @@ function App() {
       incrementMarble(id);
     }, 500);
   };
+
   const startCountDown = (id: string) => {
-    if (intervalRef.current) return;
     intervalRef.current = setInterval(() => {
       decrementMarble(id);
     }, 500);
