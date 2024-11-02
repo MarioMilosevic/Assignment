@@ -22,3 +22,9 @@
   cursor: pointer;
   padding: 0.5rem 1rem;
 }
+
+.mario {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
